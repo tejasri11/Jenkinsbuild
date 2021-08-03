@@ -1,11 +1,11 @@
 pipeline {
-  agent any
+    agent any
   
-  tools {
+    tools {
       gradle 'Gradle 7.2-rc-1'
-  }
+    }
   
-  stages {
+    stages {
       stage("run frontend") {
           steps {
             echo 'executing yarn...'
@@ -21,5 +21,5 @@ pipeline {
             }
           }
       }
-  }
+    }
 }
